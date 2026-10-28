@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  /* 800px как в макете; на узких экранах — по ширине с полями по 16px */
+  width: min(var(--content-width), 100% - 32px);
+  margin: 0 auto;
+  padding: 28px 0 60px;
+}
+
+@media (max-width: 600px) {
+  .page {
+    gap: 20px;
+    width: calc(100% - 24px);
+    padding: 12px 0 32px;
+  }
+}

@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    gap: 10px;
+  }
+}

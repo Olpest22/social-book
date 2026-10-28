@@ -1,0 +1,23 @@
+.bubble {
+  flex: 1;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 16px;
+  border: var(--border-accent);
+  border-radius: var(--radius-field);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  font-size: 16px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .bubble {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

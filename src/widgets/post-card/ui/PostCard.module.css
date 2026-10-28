@@ -1,0 +1,128 @@
+/* Отступы сняты с макета: контент 750px, слева 20px и справа 30px от внешнего края (с рамкой 2px) */
+.card {
+  min-width: 0;
+  padding: 14px 28px 18px 18px;
+}
+
+.divider {
+  height: 1px;
+  margin: 22px 0 14px;
+  border: 0;
+  background: var(--color-divider);
+}
+
+/* Перенос по факту нехватки места, а не по брейкпоинту: на ширине макета всё в одну строку,
+   на более узком экране кнопки действий уходят на вторую строку и прижимаются вправо */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px 22px;
+}
+
+.footerInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+  min-width: 0;
+}
+
+.footerActions {
+  display: flex;
+  gap: 22px;
+  margin-left: auto;
+}
+
+.count {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.commentRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 21px;
+}
+
+/* Планшет: экран уже макета — симметричные поля и плотнее список комментариев */
+@media (max-width: 760px) {
+  .card {
+    padding: 14px 18px 18px;
+  }
+
+  .comments,
+  .commentList {
+    gap: 22px;
+  }
+}
+
+/* Мобильный: действия на всю ширину, плотнее отступы */
+@media (max-width: 600px) {
+  .card {
+    padding: 12px 12px 14px;
+  }
+
+  .divider {
+    margin: 14px 0 12px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .footerInfo {
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+
+  .footerActions {
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .footerActions > button {
+    flex: 1 1 0;
+  }
+
+  .count {
+    font-size: 14px;
+    white-space: normal;
+  }
+
+  .comments,
+  .commentList {
+    gap: 14px;
+  }
+
+  .comments {
+    padding: 2px 0 0;
+  }
+
+  .commentRow {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .count {
+    font-size: 12px;
+  }
+}

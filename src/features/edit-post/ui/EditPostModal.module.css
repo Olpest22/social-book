@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding-right: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 34px;
+}
+
+.confirm {
+  min-width: 148px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    gap: 14px;
+    padding-right: 0;
+  }
+
+  .actions {
+    gap: 10px;
+  }
+
+  .actions > button {
+    flex: 1;
+    min-width: 0;
+  }
+}

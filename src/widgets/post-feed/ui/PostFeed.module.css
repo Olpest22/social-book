@@ -1,0 +1,27 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Без этого flex-элемент не ужимается уже своего min-content и растягивает страницу вбок */
+.feed > li {
+  min-width: 0;
+}
+
+.empty {
+  padding: 24px 0;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .feed {
+    gap: 16px;
+  }
+
+  .empty {
+    font-size: 16px;
+  }
+}
