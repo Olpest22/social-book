@@ -1,0 +1,79 @@
+/* Дизайн-токены, снятые с макета (кадр 1440×1024) */
+:root {
+  --color-page: #e1f8ff;
+  --color-surface: #fcfbfb;
+  --color-field: #ffffff;
+  --color-text: #1e1e1e;
+  --color-on-accent: #fcfbfb;
+
+  --color-primary: #216cff;
+  --color-danger: #ff218b;
+  --color-border-accent: #2ca6fe;
+  --color-border-field: #808080;
+  --color-divider: #c4c4c4;
+  --color-overlay: rgb(33 108 255 / 0.37);
+  --color-focus: rgb(33 108 255 / 0.45);
+
+  --shadow-card: 0 4px 4px rgb(0 0 0 / 0.25);
+  --radius: 10px;
+  --radius-field: 12px;
+  --border-accent: 2px solid var(--color-border-accent);
+
+  --font: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --content-width: 800px;
+  --transition: 150ms ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--color-page);
+  color: var(--color-text);
+  font-family: var(--font);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: 0ms;
+  }
+}
