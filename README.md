@@ -2,7 +2,7 @@
 
 Лента постов с комментариями по макету [Social Book (Figma)](https://www.figma.com/design/p4jDYcwlRsEVihOixcleWQ/Social-Book?node-id=1-4).
 
-**Демо:** https://olpest66.github.io/social-book/ <!-- ссылка заработает после включения GitHub Pages -->
+**Демо:** https://olpest22.github.io/social-book/ <!-- ссылка заработает после включения GitHub Pages -->
 
 ## Что умеет
 
